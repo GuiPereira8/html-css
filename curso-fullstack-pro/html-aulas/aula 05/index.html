@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em HTML</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        tr.service {
+            background-color: rgb(219, 227, 235);
+        }
+        th {
+            padding: 5px 10px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Tabelas</h1>
+
+    <table>
+        <caption>Tabela de Serviços</caption>
+        <tr class="service">
+            <th>Ordem</th>
+            <th>Serviço</th>
+            <th>Preço</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Trocar tela do celular</td>
+            <td>R$600</td>
+            <td>Em andamento</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Trocar bateria do celular</td>
+            <td>R$200</td>
+            <td>Aguardando</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Limpeza do computador</td>
+            <td>R$80</td>
+            <td>Em andamento</td>
+        </tr>
+    </table>
+</body>
+</html>
