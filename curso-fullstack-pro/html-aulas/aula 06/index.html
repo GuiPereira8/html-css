@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários com HTML</h1>
+    <form action="cadastro.js">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" placeholder="Primeiro nome" required>
+        </p>
+
+        <p>
+            <label for="isobren">Sobrenome:</label>
+            <input type="text" name="sobren" id="isobren" placeholder="Sobrenome" required>
+        </p>
+
+        <!-- Tipo RADIO -->
+        <p>
+            <label><strong>Qual seu nível de programador atualmente?</strong></label> <br>
+            <label>
+            <input type="radio" name="nivel" id="inivel" value="iniciante">Sou iniciante </label>
+
+            <label>
+                <input type="radio" name="nivel" id="inivel" value="medio">Comecei a pouco tempo
+            </label>
+
+            <label>
+                <input type="radio" name="nivel" id="inivel" value="Avancado">Sou avançado
+            </label>
+        </p>
+
+        <!-- Tipo Select para selecionar itens -->
+         <p>
+            <label for="">
+                <strong>Sua escolaridade</strong>
+            </label>
+            <select name="" id="">
+                <option value="">Selecione</option>
+                <option value="">Educação básica</option>
+            <option value="">Ensino m</option>
+            </select>
+         </p>
+        <p>
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
