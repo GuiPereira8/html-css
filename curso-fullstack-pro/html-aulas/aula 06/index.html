@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários</title>
 </head>
+
 <body>
     <h1>Formulários com HTML</h1>
     <form action="cadastro.js">
@@ -22,7 +24,7 @@
         <p>
             <label><strong>Qual seu nível de programador atualmente?</strong></label> <br>
             <label>
-            <input type="radio" name="nivel" id="inivel" value="iniciante">Sou iniciante </label>
+                <input type="radio" name="nivel" id="inivel" value="iniciante" checked>Sou iniciante </label>
 
             <label>
                 <input type="radio" name="nivel" id="inivel" value="medio">Comecei a pouco tempo
@@ -34,20 +36,23 @@
         </p>
 
         <!-- Tipo Select para selecionar itens -->
-         <p>
-            <label for="">
+        <p>
+            <label for="iescolaridade">
                 <strong>Sua escolaridade</strong>
             </label>
-            <select name="" id="">
-                <option value="">Selecione</option>
+            <select name="escolaridade" id="iescolaridade" required>
+                <option value="" selected disabled>Selecione</option>
                 <option value="">Educação básica</option>
-            <option value="">Ensino m</option>
+                <option value="">Ensino médio</option>
+                <option value="">Ensino Superior</option>
+                <option value="">Pós graduação</option>
             </select>
-         </p>
+        </p>
         <p>
             <input type="submit" value="Cadastrar">
             <input type="reset" value="Limpar">
         </p>
     </form>
 </body>
+
 </html>
