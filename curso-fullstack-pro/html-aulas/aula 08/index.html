@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML</title>
+</head>
+<body>
+    <h1>Tag Detail & Summary</h1>
+
+    <details>
+        <summary>Samsung Galaxy S25 Ultra</summary>
+        <p>Aproveite o Galaxy IA nova inteligencia artificial da samsung.</p>
+    </details>
+    <details>
+        <summary>Câmera</summary>
+        <p>Uma câmera de 200mpx para capturar monentos incriveis com alta qualidade.</p>
+    </details>
+    <details>
+        <summary>Preço</summary>
+        <p>Apenas 12x de R$589 sem juros</p>
+    </details>
+
+    <h2>Aplicando datalist</h2>
+
+    <form action="cadastro.js">
+        <input list="celulares" name="celular" id="celular" placeholder="Bucando algum celular?">
+        <datalist id="celulares">
+            <option value="Samsung S25 Ultra"></option>
+            <option value="Samsung A56"></option>
+            <option value="Samsung Galaxy Z-Flip"></option>
+            <option value="iPhone 17 Pro"></option>
+            <option value="iPhone 17 Pro Max"></option>
+        </datalist>
+    </form>
+</body>
+</html>
