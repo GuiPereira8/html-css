@@ -5,11 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 
 <body>
     <h1>Formulários com HTML</h1>
     <form action="cadastro.js">
+
+        <p>
+            <label for="iemail">Seu E-mail:</label>
+            <input type="email" name="nemail" id="iemail" placeholder="exemplo@gmail.com">
+        </p>
+
         <p>
             <label for="inome">Nome:</label>
             <input type="text" name="nome" id="inome" placeholder="Primeiro nome" required>
@@ -48,6 +59,34 @@
                 <option value="">Pós graduação</option>
             </select>
         </p>
+
+        <p>
+            <label for="">
+                <strong>Selecione as tecnologias que você conhece:</strong>
+            </label>
+        </p>
+        <p>
+            <input type="checkbox" name="tecnologia01" id="tecnologia01" value="HTML">
+            <label for="tecnologia01">HTML</label>
+            
+            <input type="checkbox" name="tecnologia02" id="tecnologia02" value="CSS">
+            <label for="tecnologia02">CSS</label>
+
+            <input type="checkbox" name="tecnologia03" id="tecnologia03" value="JavaScript">
+            <label for="tecnologia03">JavaScript</label>
+
+            <input type="checkbox" name="tecnologia04" id="tecnologia04" value="Java">
+            <label for="tecnologia04">Java</label>
+
+            <input type="checkbox" name="tecnologia05" id="tecnologia05" value="ReactJS">
+            <label for="tecnologia05">React.JS</label>
+        </p>
+
+        <p> <!-- Tipo Date -->
+            <label for="idata">Data de nascimento:</label>
+            <input type="date" name="data" id="idata">
+        </p>
+
         <p>
             <input type="submit" value="Cadastrar">
             <input type="reset" value="Limpar">
