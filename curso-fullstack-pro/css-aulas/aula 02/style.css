@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.primeiro-h1 {
+    font-size: 2.4rem;
+    text-align: center;
+    color: #9c9753;
+}
+
+#title {
+    color: #c54f46;
+}
+
+.title-2 {
+    font-style: italic;
+}
