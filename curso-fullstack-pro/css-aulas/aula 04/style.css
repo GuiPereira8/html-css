@@ -1,0 +1,52 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "inter", sans-serif;
+}
+
+.container {
+    background-color: #121212;
+    max-width: 720px;
+    color: aliceblue;
+
+    /* Margin: Espaçamento externo */
+    margin: 2rem;
+
+    /* Padding: Espaçamento interno */
+    padding: 2rem;
+
+    /* Border: Borda da caixa */
+    border: 4px solid rgb(150, 135, 235);
+    border-radius: 12px;
+}
+
+.rede-social h2 {
+    text-align: center;
+}
+
+.rede-social ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.rede-social li {
+    margin-bottom: 12px;
+}
+
+.rede-social a {
+    text-decoration: none;
+    color: #121212;
+    /* transition: color 0.3s; */
+}
+
+.rede-social a:hover {
+    color: #5879b6;
+}
+
+.rede-social a:active {
+    color: #82adfd;
+}
