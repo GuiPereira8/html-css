@@ -1,6 +1,9 @@
 @charset "UTF-8";
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
 }
 
 body {
@@ -14,7 +17,7 @@ body {
     color: aliceblue;
 
     /* Margin: Espaçamento externo */
-    margin: 2rem;
+    margin: 2rem auto;
 
     /* Padding: Espaçamento interno */
     padding: 2rem;
