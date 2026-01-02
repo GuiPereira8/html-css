@@ -1,0 +1,45 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100dvh;
+}
+
+.container {
+    background-color: #121212;
+    min-height: 500px;
+    margin: 2rem;
+
+    /* Ativando o Flexbox no container pai */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.area {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+    text-align: center;
+
+    flex-basis: 220px;
+}
+
+.item-1 {
+    background-color: crimson;
+}
+
+.item-2 {
+    background-color: darkkhaki;
+}
+
+.item-3 {
+    background-color: cornflowerblue;
+}
