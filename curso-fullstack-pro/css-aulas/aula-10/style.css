@@ -13,14 +13,15 @@ body {
 
 .container {
     background-color: #121212;
-    min-height: 500px;
-    margin: 2rem;
+    min-height: 620px;
+    margin: 0 2rem;
 
     /* Ativando o Flexbox no container pai */
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-evenly;
     flex-direction: row;
-    gap: 10px;
+    /* gap: 10px; */
 }
 
 .area {
@@ -29,7 +30,7 @@ body {
     font-size: 2rem;
     text-align: center;
 
-    flex-basis: 220px;
+    flex-basis: 120px;
 }
 
 .item-1 {
@@ -38,8 +39,10 @@ body {
 
 .item-2 {
     background-color: darkkhaki;
+    align-self: flex-start;
 }
 
 .item-3 {
     background-color: cornflowerblue;
+    align-self: flex-end;
 }
