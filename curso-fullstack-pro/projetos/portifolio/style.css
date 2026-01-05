@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* INICIO DO HEADER/NAV */
+.navbar {
+    background-color: #181818;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.navbar .logo {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.navbar .logo h2 {
+    color: #f6f6f6;
+}
+
+.navbar .logo img {
+    width: 50px;
+}
+
+.navbar .nav-list {
+    display: flex;
+    gap: 5px;
+    list-style: none;
+}
+
+.nav-list a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #DDD;
+    padding: 20px;
+    transition: color ease-in 0.3s;
+}
+
+.nav-list a:hover {
+    color: #FFF;
+}
