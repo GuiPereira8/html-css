@@ -1,8 +1,5 @@
-# HTML-CSS
- Curso de HTML5 e CSS3 do CursoemVideo
+<h1>HTML & CSS</h1>
 
- Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!
-
-<a href="https://guipereira8.github.io/HTML-CSS/exercicios/ex001/index.html"> Executar o exercicio 001 </a>
-
-<a href="https://guipereira8.github.io/HTML-CSS/exercicios/ex002/index.html"> Executar o exercicio 002 </a>
+<p>Bem vindo aqui está registrado todo meu aprendizado com HTML e CSS com os cursos que eu fiz, o meu primeiro curso foi com o Guanabara do CursoEmVideo e depois temos o Curso FullStack Pro do Sujeito programador.</p>
+<br>
+<p>E aqui também está registrado desde meu primeiro código até agora passando por alguns projetos e desafios ao longo do tempo.</p>
