@@ -140,7 +140,7 @@ body {
     width: 85px;
     height: 5px;
     border-radius: 1.2rem;
-    background-color: #461eac;
+    background-color: #ac1e8d;
     left: 0px;
     bottom: -2px;
 }
@@ -148,4 +148,44 @@ body {
 .about-section img {
     max-width: 450px;
     border-radius: 24px;
+}
+/* FIM SEÇÃO SOBRE */
+
+/* INICIO SEÇÃO PROJETO */
+.section-projects {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.section-projects h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.section-projects p {
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.section-projects .project-list {
+    width: 100%;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-projects img {
+    width: 22%;
+    opacity: 0.8;
+    transition: opacity ease-out 0.4s;
+}
+
+.section-projects img:hover {
+    opacity: 1.0;
 }
