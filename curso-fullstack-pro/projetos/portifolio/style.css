@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -189,3 +192,46 @@ body {
 .section-projects img:hover {
     opacity: 1.0;
 }
+
+.section-projects .action {
+    cursor: pointer;
+    background-color: #181818;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 18px;
+    color: #FFF;
+    margin-top: 18px;
+    transition: all ease-out 0.3s;
+}
+
+.section-projects .action:hover {
+    background-color: #292929;
+}
+/* FIM DA SEÇÃO PROJETO */
+
+/* RODAPÉ INICIO */
+footer {
+    width: 100%;
+    background-color: #181818;
+    padding: 30px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 14px 0;
+}
+
+footer p {
+    color: #DDD;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* RODAPÉ FIM */
