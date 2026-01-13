@@ -11,6 +11,10 @@ body {
 
 /* INICIO DO HEADER/NAV */
 .navbar {
+    position: sticky;
+    z-index: 5;
+    top: 0;
+    left: 0;
     background-color: #181818;
     height: 80px;
     width: 100%;
@@ -90,5 +94,58 @@ body {
     border-radius: 24px;
     font-size: 18px;
     font-weight: bold;
+
+    transition: transform ease-in-out 0.2s;
+}
+
+.section-content .cta-button:hover {
+    transform: scale(1.05);
+}
+.section-content .cta-button:active {
+    transform: scale(0.98);
 }
 /* Fim do estilo do MAIN */
+
+/* INICIO SEÇÃO SOBRE */
+.about-section {
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 80px 10%;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-section div {
+    max-width: 50%;
+    padding-right: 40px;
+}
+
+.about-section div p {
+    margin-bottom: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.about-section div h2 {
+    position: relative;
+    font-size: 2rem;
+    margin-bottom: 18px;
+}
+
+.about-section div h2::after {
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 5px;
+    border-radius: 1.2rem;
+    background-color: #461eac;
+    left: 0px;
+    bottom: -2px;
+}
+
+.about-section img {
+    max-width: 450px;
+    border-radius: 24px;
+}
