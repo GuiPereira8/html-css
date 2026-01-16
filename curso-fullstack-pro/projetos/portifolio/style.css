@@ -240,6 +240,15 @@ footer a:hover {
 /* RESPONSIVIDADE / MEDIA QUERIES */
 
 @media screen and (max-width: 1080px) {
+    /* INICIO NAVBAR */
+    .navbar .logo {
+        display: none;
+    }
+    .navbar {
+        justify-content: center;
+    }
+    /* FIM NAVBAR */
+    
     /* INICIO MAIN */
     .section-content h1 {
         font-size: 2.8rem;
@@ -270,4 +279,11 @@ footer a:hover {
         width: 80%;
         padding-top: 30px;
     }
+    /* FIM DO SOBRE */
+
+    /* INICIO PROJETOS */
+    .section-projects img {
+        width: 27%;
+    }
+    /* FIM PROJETOS */
 }
