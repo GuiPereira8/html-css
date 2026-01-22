@@ -16,3 +16,34 @@ body {
     font-size: 14px;
     line-height: 18px;
 }
+
+.wrapper {
+    height: 100dvh;
+}
+
+#container {
+    margin: 0 auto;
+    min-height: 100%;
+    width: 800px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.column {
+    flex-grow: 1;
+    width: 50%;
+}
+
+.left {
+    background-image: url("assets/main-foto.png");
+    background-size: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    margin-bottom: 50px;
+}
+
+.right {
+    padding-left: 20px;
+}
