@@ -151,3 +151,59 @@ footer a {
     padding-left: 20px;
     display: inline-block;
 }
+
+/* ESTILO DA PÁGINA SIGNUP */
+
+#container-signup {
+    margin: 0 auto;
+    min-height: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.message {
+    margin: 10px 70px;
+}
+
+.message span {
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #8e8e8e;
+}
+
+.face-button {
+    width: 320px;
+    height: 35px;
+    border: none;
+    background-color: #3c96ed;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px 0 5px 0;
+}
+
+.divisor-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.divisor-container .line {
+    height: 1px;
+    background-color: #E6E6E6;
+    width: 35%;
+}
+
+.divisor-container .divisor-tag {
+    font-weight: bold;
+    margin: 0 2.5%;
+    color: #8e8e8e;
+    user-select: none;
+}
