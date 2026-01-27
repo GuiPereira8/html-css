@@ -4,12 +4,20 @@
     padding: 0;
     outline: 0;
 }
+:root {
+    --primary: #3C96ED;
+    --white: #FFFFFF;
+    --fundo: #FAFAFA;
+    --border-primary: #E6E6E6;
+    --black: #000000;
+}
+
 a {
     text-decoration: none;
-    color: #3c96ed;
+    color: var(--primary);
 }
 body {
-    background-color: #fafafa;
+    background-color: var(--fundo);
     height: 100%;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -49,8 +57,8 @@ body {
 }
 
 .login-panel {
-    background-color: #FFF;
-    border: 1px solid #E6E6E6;
+    background-color: var(--white);
+    border: 1px solid var(--border-primary);
     text-align: center;
     padding: 20px 0;
 }
@@ -69,8 +77,8 @@ form {
 }
 
 input[type="text"], input[type="password"] {
-    background-color: #FFF;
-    border: 1px solid #E6E6E6;
+    background-color: var(--white);
+    border: 1px solid var(--border-primary);
     height: 40px;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -93,7 +101,7 @@ input[type="submit"] {
     border: none;
     background-color: #3c96ed;
     border-radius: 5px;
-    color: #FFF;
+    color: var(--white);
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
@@ -101,9 +109,9 @@ input[type="submit"] {
 }
 
 .infobox {
-    background-color: #FFF;
+    background-color: var(--white);
     height: 60px;
-    border: 1px solid #E6E6E6;
+    border: 1px solid var(--border-primary);
     margin: 10px auto 0;
 
     display: flex;
@@ -137,7 +145,7 @@ footer {
 }
 
 footer a {
-    color: #000;
+    color: var(--black);
     text-transform: uppercase;
     font-weight: bold;
     margin-right: 8px;
@@ -179,9 +187,9 @@ footer a {
     width: 320px;
     height: 35px;
     border: none;
-    background-color: #3c96ed;
+    background-color: var(--primary);
     border-radius: 5px;
-    color: #FFF;
+    color: var(--white);
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
@@ -197,7 +205,7 @@ footer a {
 
 .divisor-container .line {
     height: 1px;
-    background-color: #E6E6E6;
+    background-color: var(--border-primary);
     width: 35%;
 }
 
@@ -206,4 +214,41 @@ footer a {
     margin: 0 2.5%;
     color: #8e8e8e;
     user-select: none;
+}
+/* FIM PÁGINA SIGNUP */
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 850px) {
+    .left {
+        display: none;
+    }
+
+    .right {
+        padding: 0;
+    }
+
+    #container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #container {
+        width: 90%;
+    }
+    #container-signup {
+        width: 90%;
+    }
+
+    input[type="password"], input[type="text"],input[type="submit"] {
+        width: 85%;
+    }
+
+    .face-button {
+        width: 85%;
+    }
+
+    .message {
+        margin: 10px 25px;
+    }
 }
