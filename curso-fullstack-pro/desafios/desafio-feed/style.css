@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    background-color: #121212;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+header > h1 {
+    color: #FFF;
+    padding: 10px;
+}
+
+
+/* Estilo do Feed */
+
+main {
+    height: 100%;
+}
+
+div.container {
+    margin: 0 auto;
+    max-width: 670px;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 20px;
+}
+
+div.profile {
+    display: flex;
+    background-color: #FFF;
+    width: 100%;
+    padding: 10px;
+    margin-top: 16px;
+    margin-bottom: 5px;
+    align-items: center;
+    gap: 0 12px;
+    border-radius: 10px;
+}
+
+.img-profile {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #121212;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.post {
+    width: 100%;
+    height: 380px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+div.img-post1 {
+    background-image: url("assets/images/foto1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+div.img-post2 {
+    background-image: url("assets/images/foto2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+div.img-post3 {
+    background-image: url("assets/images/foto3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.post-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 8px;
+    margin: 5px 0;
+    gap: 0 14px;
+}
+
+.post-buttons a {
+    position: relative;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #121212;
+}
+
+.post-buttons a::after {
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    content: "";
+    width: 0%;
+    height: 2.4px;
+    background-color: deeppink;
+    border-radius: 18px;
+    transition: width 0.4s ease-in-out;
+}
+
+.post-buttons a:hover::after {
+    width: 100%;
+}
