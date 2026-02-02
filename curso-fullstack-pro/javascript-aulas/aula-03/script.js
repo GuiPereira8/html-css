@@ -1,0 +1,1 @@
+let lista = ['Guilherme', 'Eduarda', 'Juliana', 'Matheus'];
