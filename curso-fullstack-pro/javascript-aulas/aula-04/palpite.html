@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Adivinhação</title>
+</head>
+<body>
+
+    <script>
+        let numeroSecreto = Math.floor(Math.random() * 10) + 1;
+        let palpite = 0;
+
+        while (palpite !== numeroSecreto) {
+            palpite = window.parseInt(prompt("Adivinhe o número secreto entre 1 e 10"));
+            if (!palpite) {
+                window.alert("Você cancelou o jogo!");
+                break;
+            }
+            
+            if (palpite !== numeroSecreto) {
+                window.alert('Número errado tente novamente!');
+            }
+        }
+        if (palpite === numeroSecreto) {
+            window.alert('Parabéns você acertou o número secreto! ' + numeroSecreto);
+        }
+    </script>
+</body>
+</html>
