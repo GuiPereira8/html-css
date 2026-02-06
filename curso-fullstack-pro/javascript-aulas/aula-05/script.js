@@ -19,3 +19,22 @@ function fazerPedido() {
             break;
     }
 }
+
+//CONDICIONAIS!
+let numero = 8;
+
+numero === 10 ? console.log("Número é igual a 10") : console.log("Número não tem o valor 10") ;
+
+if (numero === 8) {
+    console.log("Seu número é igual a 8!");
+}else {
+    console.log("Número é diferente de 8!");
+}
+
+let idade = 22;
+
+if (idade >= 18) {
+    console.log(`Você tem ${idade} anos já é maior de idade!`);
+}else {
+    console.log(`Você tem ${idade} anos é menor de idade!`);
+}
