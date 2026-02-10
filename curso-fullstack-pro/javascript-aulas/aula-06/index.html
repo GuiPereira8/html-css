@@ -6,7 +6,7 @@
     <title>Calculadora IMC</title>
 </head>
 <body>
-    <form action="peso.js" method="get">
+    <form method="get" onsubmit="return calcular(event)">
         <label for="peso">Digite seu peso:</label> <br>
         <input type="text" name="peso" id="peso" placeholder="Exemplo 65"> <br> <br>
 
@@ -15,6 +15,8 @@
 
         <input type="submit" value="Calcular IMC">
     </form>
+
+    <div id="resultado"></div>
 
     <script src="script.js"></script>
 </body>
