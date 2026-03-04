@@ -41,6 +41,15 @@ buttonElement.addEventListener("click", () => {
     }
 });
 
+//Função para registrar tarefa apertando tecla Enter.
+inputElement.addEventListener("keypress", (event) => {
+    if (event.key === "Enter") {
+        event.preventDefault();
+
+        buttonElement.click();
+    }
+});
+
 function deletarTarefa(position) {
     // window.alert(`Posição do item ${position} foi deletado!`);
     tarefas.splice(position, 1);
