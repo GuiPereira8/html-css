@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-inter);
+}
+
+:root {
+    --font-inter: "Inter", sans-serif;
+    --primary-color: #0056FB;
+    --black:#000000;
+    --white: #FFFFFF;
+    --border-line: #8C8C8C;
+}
+body {
+    background-color: #0e173b;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    background-color: var(--white);
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    height: 100dvh;
+}
+
+.div-form {
+    height: 100%;
+    /* width: 50%; */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Inicio do estilo do formulário */
+.div-form div h1 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.div-form form {
+    position: relative;
+    width: 452px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.div-form form input[type="email"], input[type="password"],
+input[type="text"] {
+    padding: 15px 20px;
+    margin-top: 25px;
+    border-radius: 6px;
+    border: 1px solid var(--border-line);
+}
+
+.div-form form .div-chekb {
+    margin-top: 25px;
+}
+
+.div-form form .btn-code {
+    position: relative;
+    width: 100%;
+}
+
+.div-form form .btn-code input[type="button"] {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 15px;
+    border: none;
+    margin: 25px 0;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.div-form form .img-code {
+    user-select: none;
+    width: 92px;
+    opacity: 15%;
+    position: absolute;
+    z-index: 1;
+    top: 46px;
+    left: 385px;
+}
+
+.div-form form p > a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.div-form form p > a:hover {
+    text-decoration: underline;
+    color: #0046c7;
+}
+.div-form form p > a:active {
+    color: #1163fc;
+}
+
+/* Fim do estilo do formulário */
+
+.div-img {
+    height: 100%;
+    /* width: 50%; */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+.div-img .div-content {
+    width: 525px;
+}
+
+.div-img .div-content img {
+    user-select: none;
+}
+
+.div-img .div-content h2 {
+    font-weight: bold;
+    color: var(--white);
+    font-size: 48px;
+    margin-top: 40px;
+}
+.div-img .div-content p {
+    color: var(--white);
+    font-size: 16px;
+    margin-top: 24px;
+}

@@ -6,29 +6,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Faça seu login</title>
 </head>
 <body>
     <main>
         <div class="div-form">
-            <div>
-                <h1>Minha conta</h1>
-            </div>
             <form>
+                <div>
+                    <h1>Minha conta</h1>
+                </div>
                 <input type="email" name="nemail" id="iemail" placeholder="Digite seu email" required>
                 <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" required>
-                <input type="button" value="Acessar">
-                <img src="assets/code.svg" alt="code-icon">
+                <div class="btn-code">
+                    <input type="button" value="Acessar">
+                    <img src="assets/code.svg" alt="code-icon" class="img-code">
+                </div>
+                <p><strong>Novo por aqui?</strong> <a href="cadastro.html">Cadastre-se.</a></p>
             </form>
-            <p>Novo por aqui? <a href="cadastro.html">Cadastre-se.</a></p>
         </div>
         <div class="div-img">
             <div class="div-content">
                 <img src="assets/info.png" alt="linguagens da web">
                 <h2>Leve sua carreira ao próximo nível.</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                 Egestas fermentum nibh volutpat turpis orci pharetra euismod quam non.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                 Egestas fermentum nibh volutpat turpis orci pharetra <br> euismod quam non.</p>
             </div>
         </div>
     </main>
