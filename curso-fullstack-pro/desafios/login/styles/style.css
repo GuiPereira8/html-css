@@ -45,7 +45,6 @@ main {
 }
 
 .div-form form {
-    position: relative;
     width: 452px;
     display: flex;
     flex-direction: column;
@@ -116,6 +115,7 @@ input[type="text"] {
 
 .div-img .div-content {
     width: 525px;
+    padding: 12px;
 }
 
 .div-img .div-content img {
@@ -132,4 +132,56 @@ input[type="text"] {
     color: var(--white);
     font-size: 16px;
     margin-top: 24px;
+    line-height: 1.4rem;    
+}
+/* Fim dos etilos */
+
+@media screen and (max-width: 1120px) {
+    .div-form form .img-code {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    main {
+        flex-direction: column;
+    }
+    .div-form {
+        min-height: 80%;
+    }
+    .div-img .div-content {
+        padding: 62px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* Responsividade do formulário */
+    .div-form {
+        min-height: 80%;
+    }
+    .div-form div h1 {
+        font-size: 32px;
+    }
+    .div-form form p {
+        font-size: 14px;
+        text-align: center;
+    }
+    .div-form form {
+        width: 90%;
+    }
+    /* Fim da responsividade do formulário */
+
+
+    /* Resposividade Lado direito */
+    .div-img .div-content {
+        width: 90%;
+        padding: 62px 0;
+    }
+    .div-img .div-content h2 {
+        font-size: 32px;
+    }
+    .div-img .div-content p {
+        font-size: 14px;
+        text-align: left;
+    }
 }
